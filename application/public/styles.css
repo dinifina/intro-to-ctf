@@ -59,6 +59,36 @@ h3 {
     text-align: center;
 }
 
+.welcome-message {
+    background-color: #E18450;
+    color: #FFFEFD;
+    border-radius: 20px;
+    text-align: center;
+    max-width: fit-content;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: auto;
+}
+
+.user-info {
+    background-color: #E18450;
+    color: #FFFEFD;
+    border-radius: 20px;
+    text-align: center;
+    max-width: fit-content;
+    padding-left: 5%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details {
+    text-align: left;
+}
+
 html, body {
     height: 100%;
 }
