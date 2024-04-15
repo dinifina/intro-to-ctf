@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Dashboard</title>
 </head>
 <body>
-    <h1 class ="welcome-message">Welcome, name</h1>
+    <h1 class ="welcome-message">Welcome, <%= user.user_name %></h1>
     <div class="main">
         <div class="wrapper">
             <div class="user-info">
-                <img src="../public/images/avatar.png" height="200px">
+                <img src="/images/avatar.png" height="200px">
                 <h3 class="contact-details">
                     Name:
-                    <!-- INSERT FETCH HERE -->
+                    <%= user.user_name %>
                     <br>
-                    Mailing Address:
-                    <!-- INSERT FETCH HERE -->
-                    <br>
-                    Delivery Address:
-                    <!-- INSERT FETCH HERE -->
+                    Address:
+                    <%= user.user_address %>
                     <br>
                     Last Purchase:
-                    <!-- INSERT FETCH HERE -->
+                    <%= user.last_purchase %>
                 </h3>
             </div>
         </div>

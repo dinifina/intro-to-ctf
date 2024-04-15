@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Bread Shop</title>
 </head>
 <body>
@@ -19,15 +19,11 @@
                         <label for="password">Password:</label><br>
                         <input type="password" id="password" name="password"><br>
                         <br>
+                        <%if (error) { %>
+                            <p class="login-error">Invalid Credentials</p>
+                            <% } %>
                         <button type="submit">Submit</button>
                     </form>
-                </div>
-            </div>
-            <div class="top-right">
-                <div class="menu-button" onclick="openMenu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
                 </div>
             </div>
         </div>
