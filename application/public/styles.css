@@ -98,6 +98,98 @@ h3 {
 html, body {
     height: 100%;
 }
+
+.right-menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #FFFEFD;
+    width: 80px;
+    height: 105%;
+}
+
+.menu-button {
+    display: inline-block;
+    cursor: pointer;
+    top: 5%;
+    right: 1.5%;
+    position: fixed;
+    z-index: 2;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.memberlist {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #FFFEFD;
+    width: 80px;
+    height: 100%;
+    z-index: 1;
+    transition: 0.4s, width 0.4s;
+}
+
+.change .memberlist {
+    transform: scaleX(2);
+    width: 160px;
+}
+
+.change2 .memberlist {
+    transform: scaleX(0.5);
+    width: 80px;
+}
+
+.list {
+    list-style-type: none;
+    font-family: 'Poppins';
+    top: 100px;
+    right: 150px;
+    position: absolute;
+    z-index: 3;
+    transition: opacity 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+
+.change .list {
+    opacity: 100;
+}
+
+.change2 .list {
+    opacity: 0;
+    transition-duration: 0.1s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change2 .bar1 {
+    transform: rotate(0deg);
+}
+  
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+.change2 .bar2 {opacity: 100;}
+  
+/* Rotate last bar */
+.change .bar3 {
+transform: translate(0, -11px) rotate(45deg);
+}
+
+.change2 .bar3 {
+    transform: rotate(0);
+}
+
 .main {
     height: 100%;
     width: 100%;
