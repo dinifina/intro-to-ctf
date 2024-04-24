@@ -1,0 +1,17 @@
+version: "3"
+services:
+  server:
+    container_name: server
+    build: 
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+  db:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: vxd-Th1-FoR
+      POSTGRES_DB: sqlvulndb

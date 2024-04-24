@@ -6,7 +6,7 @@ const pool = require("../db");
 router.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;
-        const users = await pool.query(`SELECT * FROM users WHERE user_name = '${username}' AND user_password = '${password}'`);
+        const users = await pool.query(`SELECT * FROM "users" WHERE user_name = '${username}' AND user_password = '${password}'`);
         if (users.rows.length === 0) {
             return res.render("index", { error : "Invalid Credentials" });
         }
